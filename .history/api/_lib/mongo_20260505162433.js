@@ -19,7 +19,7 @@ async function createIndexes(mongoClient) {
 	const db = mongoClient.db('awDB')
 	await db.collection('users').createIndex({ email: 1 }, { unique: true })
 	await db.collection('users').createIndex({ createdAt: -1 })
-    await db.collection('installations').createIndex({createdAt: -1})
+    await db.collection('installations').createIndex
 }
 
 // Cache the connection across invocations.
