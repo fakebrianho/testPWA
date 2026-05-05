@@ -32,10 +32,10 @@ async function getInstallations() {
 		const data = await response.json()
 		console.log('Installation Data:', data)
 	} catch (error) {
-		console.error('Failed to get installations', error)
+		console.error('Failed to get installations', errro)
 	}
 }
 
 window.addEventListener('click', testHelloServerless)
 userButton.addEventListener('click', getUsers)
-installationButton.addEventListener('click', getInstallations)
+installationButton.addEventListener('click', console.log('hi'))

@@ -38,4 +38,4 @@ async function getInstallations() {
 
 window.addEventListener('click', testHelloServerless)
 userButton.addEventListener('click', getUsers)
-installationButton.addEventListener('click', getInstallations)
+installationButton.addEventListener('click', console.log('hi'))

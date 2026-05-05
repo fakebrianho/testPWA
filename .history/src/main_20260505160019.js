@@ -17,25 +17,8 @@ async function testHelloServerless() {
 		console.error('Failed to call /api/hello:', error)
 	}
 }
-async function getUsers() {
-	try {
-		const response = await fetch('/api/users')
-		const data = await response.json()
-		console.log('User Data:', data)
-	} catch (error) {
-		console.error('Failed to call users', error)
-	}
-}
-async function getInstallations() {
-	try {
-		const response = await fetch('/api/installations')
-		const data = await response.json()
-		console.log('Installation Data:', data)
-	} catch (error) {
-		console.error('Failed to get installations', error)
-	}
-}
+async function 
 
 window.addEventListener('click', testHelloServerless)
-userButton.addEventListener('click', getUsers)
-installationButton.addEventListener('click', getInstallations)
+userButton.addEventListener('click', console.log('hi'))
+installationButton.addEventListener('click', console.log('hi'))
